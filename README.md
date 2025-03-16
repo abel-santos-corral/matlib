@@ -181,6 +181,42 @@ En un sistema de inferencia difusa basado en reglas, normalmente se define **una
 - Si `VarA` es `terA3` y `VarB` es `terB4`, entonces `VarOut` es `VarOut3`.
 
 
+### 🔍 Cómo calcular el corte de una función de pertenencia triangular
+
+Cuando cortas la función de pertenencia a un nivel máximo de 0.67, básicamente estás intersectando la curva con una línea horizontal en \( y = 0.67 \). Para calcular los puntos \( x \) correspondientes, necesitas:
+
+1. **Definir la función de pertenencia original (triangular).**
+2. **Resolver la intersección de esa función con el nivel \( 0.67 \).**
+
+---
+
+### 📌 Cálculo manual:
+
+La función de pertenencia triangular \( \text{VarOut2} \) está definida como:
+
+- \( 0 \) para \( x \leq 0 \) o \( x \geq 10 \)
+- \( \frac{x}{5} \) para \( 0 \leq x \leq 5 \)
+- \( \frac{10 - x}{5} \) para \( 5 \leq x \leq 10 \)
+
+Queremos saber dónde esta función es igual a \( 0.67 \).
+
+Para \( 0 \leq x \leq 5 \):
+\[
+\frac{x}{5} = 0.67 \implies x = 0.67 \times 5 = 3.35
+\]
+
+Para \( 5 \leq x \leq 10 \):
+\[
+\frac{10 - x}{5} = 0.67 \implies 10 - x = 0.67 \times 5 \implies x = 10 - 3.35 = 6.65
+\]
+
+---
+
+### 📌 Resultado:
+
+El corte ocurre entre los puntos \( x = 3.35 \) y \( x = 6.65 \).
+
+
 # Bibliography
 
 Access to site of fuzzy: 
