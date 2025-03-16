@@ -117,6 +117,46 @@ Where:
 
 **Graphically**, small values of `w` produce smooth transitions, while larger values make the function more like a threshold function.  
 
+🔍 Ejemplo de particiones difusas para la variable **Temperatura**
+
+Supongamos que tenemos tres conjuntos difusos:
+
+    - Frío (μ1)
+    - Tibio (μ2)
+    - Caliente (μ3)
+
+### Universo de Discurso (D):
+Rango de temperaturas entre 0°C y 40°C.
+
+### Funciones de pertenencia:
+- **Frío (μ1):**  
+    - Trapezoidal con soporte completo en [0, 15] y declive suave hasta 20.  
+    - \( \mu_1(x) = 1 \) si \( x \leq 15 \)  
+    - \( \mu_1(x) = \frac{20 - x}{5} \) si \( 15 < x \leq 20 \)  
+    - \( \mu_1(x) = 0 \) si \( x > 20 \)  
+
+- **Tibio (μ2):**  
+    - Triangular con centro en 25 y soporte de [15, 35].  
+    - \( \mu_2(x) = \frac{x - 15}{10} \) si \( 15 < x \leq 25 \)  
+    - \( \mu_2(x) = \frac{35 - x}{10} \) si \( 25 < x \leq 35 \)  
+    - \( \mu_2(x) = 0 \) si \( x \leq 15 \) o \( x \geq 35 \)  
+
+- **Caliente (μ3):**  
+    - Trapezoidal con soporte completo en [30, 40] y declive suave desde 25.  
+    - \( \mu_3(x) = 0 \) si \( x < 25 \)  
+    - \( \mu_3(x) = \frac{x - 25}{5} \) si \( 25 \leq x \leq 30 \)  
+    - \( \mu_3(x) = 1 \) si \( x > 30 \)  
+
+---
+
+🔑 **Propiedad de Partición Difusa:**  
+
+En cada punto \( x \in D \), la suma de pertenencias de **Frío**, **Tibio** y **Caliente** debe ser 1:  
+\[
+\mu_1(x) + \mu_2(x) + \mu_3(x) = 1
+\]
+
+
 # Bibliography
 
 Access to site of fuzzy: 
