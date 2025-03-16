@@ -156,6 +156,30 @@ En cada punto \( x \in D \), la suma de pertenencias de **Frío**, **Tibio** y *
 \mu_1(x) + \mu_2(x) + \mu_3(x) = 1
 \]
 
+## Cálculo del número de tuplas de entrada
+
+Para calcular el número de tuplas de entrada posibles, simplemente multiplicamos la cantidad de términos en cada variable de entrada:
+
+- La variable `VarA` tiene **3 términos**: `terA1`, `terA2`, `terA3`.
+- La variable `VarB` tiene **4 términos**: `terB1`, `terB2`, `terB3`, `terB4`.
+
+Entonces, el número total de combinaciones o tuplas posibles es:
+
+Número de tuplas = 3 × 4 = 12
+
+
+Por lo tanto, existen **12 tuplas posibles** para las variables de entrada.
+
+## ¿Cuántas reglas necesito?
+
+En un sistema de inferencia difusa basado en reglas, normalmente se define **una regla por cada tupla de entrada posible**. Esto significa que necesitas **12 reglas**, una para cada combinación de términos de `VarA` y `VarB`.
+
+### Ejemplo de reglas
+- Si `VarA` es `terA1` y `VarB` es `terB1`, entonces `VarOut` es `VarOut1`.
+- Si `VarA` es `terA1` y `VarB` es `terB2`, entonces `VarOut` es `VarOut2`.
+- ...
+- Si `VarA` es `terA3` y `VarB` es `terB4`, entonces `VarOut` es `VarOut3`.
+
 
 # Bibliography
 
